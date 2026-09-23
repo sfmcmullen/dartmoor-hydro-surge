@@ -4,6 +4,8 @@ A full-stack, real-time hydrologic forecasting dashboard predicting river stage 
 
 This project integrates real-time environmental telemetry from the UK Environment Agency API with custom XGBoost regression models to predict river level surges up to 3 hours in advance.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://dartmoor-hydro-surge.vercel.app/)
+
 ---
 
 ## 🛠️ System Architecture & Tech Stack
