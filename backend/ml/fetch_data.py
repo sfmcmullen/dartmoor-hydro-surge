@@ -138,6 +138,12 @@ def fetch_austins_bridge_archive(
 ) -> pd.DataFrame:
     """Fetches Austin's Bridge river-level readings from the Environment Agency's daily archive CSVs."""
 
+    # Ensure inputs are timezone-aware in UTC for consistent filtering.
+    if start_date.tzinfo is None:
+        start_date = start_date.replace(tzinfo=timezone.utc)
+    if end_date.tzinfo is None:
+        end_date = end_date.replace(tzinfo=timezone.utc)
+
     logging.info(
         f"Fetching Austin's Bridge from archive: {start_date.date()} -> {end_date.date()}"
     )
