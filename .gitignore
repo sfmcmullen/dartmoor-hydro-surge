@@ -19,3 +19,32 @@ backend/models/*.joblib
 # Docker / Environment variables
 .env
 .env.local
+
+
+
+
+# Frontend Dependencies
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Frontend Build Output
+frontend/dist/
+frontend/build/
+
+# Frontend Environment Variables & Local Overrides
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Frontend Caches & Tooling Output
+frontend/.vite/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.eslintcache
+
+# Testing & Coverage
+frontend/coverage/
