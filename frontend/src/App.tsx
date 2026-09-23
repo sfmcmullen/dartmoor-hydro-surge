@@ -22,7 +22,8 @@ import {
 import type { PredictionResponse, ChartPoint } from "./types";
 import "./App.css";
 
-const API_ENDPOINT = "http://127.0.0.1:8000/api/predict";
+// const API_ENDPOINT = "http://127.0.0.1:8000/api/predict";
+const API_ENDPOINT = 'https://dartmoor-hydro-surge-api.onrender.com/api/predict';
 
 export default function App(): React.JSX.Element {
     const [data, setData] = useState<PredictionResponse | null>(null);
